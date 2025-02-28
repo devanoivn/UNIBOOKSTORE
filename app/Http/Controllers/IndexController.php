@@ -9,6 +9,7 @@ use App\Models\Publisher;
 
 class IndexController extends Controller
 {
+    
     public function index(Request $request)
     {
         $query = Book::with('publisher');

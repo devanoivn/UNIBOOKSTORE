@@ -3,7 +3,6 @@
   <head>
     <script src="../assets/js/color-modes.js"></script>
     <script src="{{ asset('assets/js/color-modes.js') }}"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -12,10 +11,7 @@
     <title>UNIBOOKSTORE</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -93,18 +89,12 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-    </style>
-
-    
+    </style> 
     <!-- Custom styles for this template -->
     <link href="navbars.css" rel="stylesheet">
   </head>
-  <body>
-
-    
+  <body>  
 <main>
-
-
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Eleventh navbar example">
       <div class="container-fluid">
@@ -118,7 +108,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/admin" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
                 <ul class="dropdown-menu">

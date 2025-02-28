@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
@@ -118,21 +116,18 @@
             </ul>
         </div>
     @endif
-
       <div class="col-md col-lg">
-
         <form class="needs-validation" action="{{ route('admin.book.update', $book->id) }}" method="POST" novalidate>
             @csrf
             @method('PUT')
             <div class="row g-3">
             <div class="col-sm-6">
               <label for="idbuku" class="form-label">ID Buku</label>
-              <input name="idbuku" type="number" class="form-control" id="idbuku" placeholder="" value="{{ $book->idbuku }}" required>
+              <input name="idbuku" type="text" class="form-control" id="idbuku" value="{{ $book->idbuku }}" readonly>
               <div class="invalid-feedback">
                 ID Buku is required.
-              </div>
+              </div>  
             </div>
-
             <div class="col-sm-6">
               <label for="kategori" class="form-label">Kategori</label>
               <input name="kategori" type="text" class="form-control" id="kategori" placeholder="" value="{{ $book->kategori }}" required>
@@ -168,12 +163,9 @@
                 Stock is required.
               </div>
             </div>
-
-
             <div class="col-md-5">
               <label for="penerbit_id" class="form-label">Publisher</label>
-              <select name="penerbit_id" class="form-select" id="penerbit_id" required>
-                
+              <select name="penerbit_id" class="form-select" id="penerbit_id" required> 
                 @foreach ($publishers as $publisher)
                 <option value="{{ $publisher->id }}" {{ $book->penerbit_id == $publisher->id ? 'selected' : '' }}>
                     {{ $publisher->nama }}

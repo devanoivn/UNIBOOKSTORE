@@ -10,11 +10,7 @@
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.122.0">
         <title>UNIBOOK</title>
-    
         <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    
-        
-    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     
@@ -96,8 +92,6 @@
             display: block !important;
           }
         </style>
-    
-        
         <!-- Custom styles for this template -->
         <link href="form.css" rel="stylesheet">
       </head>
@@ -109,10 +103,7 @@
         <div class="py-5 text-center">
           <h2>Tambah Buku</h2>
         </div>
-    
-
           <div class="col-md col-lg">
-
             <form class="needs-validation" action="{{ route('admin.book.store') }}" method="POST" novalidate>
             @csrf
               <div class="row g-3">

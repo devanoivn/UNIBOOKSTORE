@@ -11,14 +11,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
     <title>UNIBOOK</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -97,7 +92,6 @@
         display: block !important;
       }
     </style>
-
     <!-- Custom styles for this template -->
     <link href="form.css" rel="stylesheet">
   </head>
@@ -119,19 +113,17 @@
         </div>
     @endif
       <div class="col-md col-lg">
-
         <form class="needs-validation" action="{{ route('admin.publisher.update', $publisher->id) }}" method="POST" novalidate>
         @csrf
         @method('PUT')
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="idpenerbit" class="form-label">ID Penerbit</label>
-              <input name="idpenerbit" type="number" class="form-control" id="idpenerbit" placeholder="" value="{{ $publisher->idpenerbit }}" readonly>
+              <input name="idpenerbit" type="text" class="form-control" id="idpenerbit" placeholder="" value="{{ $publisher->idpenerbit }}" readonly>
               <div class="invalid-feedback">
                 ID Penerbit is required.
               </div>
             </div>
-
             <div class="col-sm-6">
               <label for="nama" class="form-label">Nama</label>
               <input name="nama" type="text" class="form-control" id="nama" placeholder="" value="{{ $publisher->nama }}" required>

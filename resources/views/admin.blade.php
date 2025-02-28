@@ -11,16 +11,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
     <title>UNIBOOKSTORE</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
-
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -98,9 +91,7 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-    </style>
-
-    
+    </style>  
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -110,13 +101,10 @@
     @include('menu')
     <div class="container-fluid">
     <div class="row">
-
     @if(session('success'))
         <p style="color:green;">{{ session('success') }}</p>
     @endif
-
     <h2>Data Buku</h2>
-
         <div class="table-responsive small">
         <table class="table table-striped table-sm">
           <thead>
